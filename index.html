@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan Pal</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./scripts/prompt.js" defer></script>
+    <script src="./scripts/chatgpt.js" defer></script>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <header class="header">Plan Pal</header>
+    <p class="header__tagline">Live your dreams...</p>
+    <main>
+      <section class="destination"></section>
+      <div class="loader-container">
+        <div class="loader"></div>
+      </div>
+      <section class="form-wrapper">
+        <form action="" class="prompt-form">
+          <div class="prompt-form__container">
+            <label for="" class="prompt-form__label"
+              >Your Budget (£)
+              <input
+                class="prompt-form__input"
+                type="number"
+                name="budget"
+                id="budget"
+                placeholder="What is your budget?"
+                required
+              />
+            </label>
+
+            <label for="" class="prompt-form__label"
+              >How many people?
+              <input
+                class="prompt-form__input"
+                type="number"
+                name="people"
+                id="people"
+                placeholder="How many people are coming?"
+                required
+              />
+            </label>
+
+            <label for="" class="prompt-form__label"
+              >Number of days
+              <input
+                class="prompt-form__input"
+                type="number"
+                name="days"
+                id="days"
+                placeholder="How many days will you be on holiday for?"
+                required
+              />
+            </label>
+
+            <label for="" class="prompt-form__label"
+              >Maximum flight time (hours)
+              <input
+                class="prompt-form__input"
+                class=""
+                type="number"
+                name="flighttime"
+                id="flighttime"
+                placeholder="What is the maximum time you would like to fly?"
+                required
+              />
+            </label>
+
+            <label for="" class="prompt-form__label"
+              >Your interests
+              <textarea
+                class="prompt-form__input prompt-form__input--textarea"
+                type="text"
+                name="interest"
+                id="interest"
+                placeholder="What things do you want to do on holiday?"
+                required
+              ></textarea>
+            </label>
+
+            <label for="" class="prompt-form__label"
+              >Time of the year
+              <select class="prompt-form__input" name="month" id="month">
+                <option value="January" class="month">January</option>
+                <option value="February" class="month">February</option>
+                <option value="March" class="month">March</option>
+                <option value="April" class="month">April</option>
+                <option value="May" class="month">May</option>
+                <option value="June" class="month">June</option>
+                <option value="July" class="month">July</option>
+                <option value="August" class="month">August</option>
+                <option value="September" class="month">September</option>
+                <option value="October" class="month">October</option>
+                <option value="November" class="month">November</option>
+                <option value="December" class="month">December</option>
+              </select>
+            </label>
+
+            <label for="" class="prompt-form__label"
+              >Ideal temperature (°C)
+              <input
+                class="prompt-form__input"
+                type="number"
+                name="temperature"
+                id="temperature"
+                placeholder="Whats your ideal temperature?"
+                required
+              />
+            </label>
+
+            <label for="" class="prompt-form__label"
+              >Your dislikes
+              <textarea
+                class="prompt-form__input prompt-form__input--textarea"
+                type="text"
+                name="dislikes"
+                id="dislikes"
+                placeholder="What things do you not like on holiday?"
+              ></textarea>
+            </label>
+
+            <label for="" class="prompt-form__label"
+              >The number of options you want
+              <input
+                class="prompt-form__input"
+                type="number"
+                name="responses"
+                id="responses"
+                placeholder="How many options would you like?"
+                required
+              />
+            </label>
+          </div>
+          <button class="prompt-form__button" type="submit">
+            Submit Prompt
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+  </body>
+</html>
